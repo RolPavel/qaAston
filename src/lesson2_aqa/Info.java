@@ -15,11 +15,9 @@ public class Info {
             System.out.println();
         }
 
-        Park.Attraction attraction1 = new Park.Attraction("Roller Coaster", "10:00 - 18:00", 20.0);
-        Park.Attraction attraction2 = new Park.Attraction("Ferris Wheel", "09:00 - 17:00", 15.0);
-
-        attraction1.printInfo();
-        System.out.println();
-        attraction2.printInfo();
+        Park park = new Park();
+        park.addAttraction(new Park.Attraction("Roller Coaster", "10:00 - 18:00", 20.0));
+        park.addAttraction(new Park.Attraction("Ferris Wheel", "09:00 - 17:00", 15.0));
+        park.printAllAttractions();
     }
 }

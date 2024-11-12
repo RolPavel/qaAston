@@ -1,6 +1,26 @@
 package lesson2_aqa;
 
+import java.util.ArrayList;
+import java.util.List;
+
 class Park {
+    private final List<Attraction> attractions;
+
+    public Park() {
+        this.attractions = new ArrayList<>();
+    }
+
+    public void addAttraction(Attraction attraction) {
+        attractions.add(attraction);
+    }
+
+    public void printAllAttractions() {
+        for (Attraction attraction : attractions) {
+            attraction.printInfo();
+            System.out.println();
+        }
+    }
+
     public static class Attraction {
         private final String name;
         private final String workingHours;
@@ -19,4 +39,3 @@ class Park {
         }
     }
 }
-
