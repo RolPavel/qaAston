@@ -121,4 +121,5 @@ public class Lesson1 {
         multiplyLessThanSix(array2);
         System.out.println("Измененный массив: " + Arrays.toString(array2));
     }
+
 }
