@@ -6,9 +6,14 @@ public class Info {
         Rectangle rectangle = new Rectangle(4, 6, "blue", "green");
         Triangle triangle = new Triangle(3, 4, 5, "yellow", "purple");
 
-        printShapeInfo("Круг", circle);
-        printShapeInfo("Прямоугольник", rectangle);
-        printShapeInfo("Треугольник", triangle);
+        System.out.println("Информация о круге:");
+        circle.displayInfo();
+
+        System.out.println("Информация о прямоугольнике:");
+        rectangle.displayInfo();
+
+        System.out.println("Информация о треугольнике:");
+        triangle.displayInfo();
 
         circle.setFillColor("orange");
         circle.setBorderColor("brown");
@@ -16,17 +21,14 @@ public class Info {
         triangle.setBorderColor("grey");
 
         System.out.println("\nИнформация после изменения цветов:");
-        printShapeInfo("Круг", circle);
-        printShapeInfo("Прямоугольник", rectangle);
-        printShapeInfo("Треугольник", triangle);
-    }
 
-    public static void printShapeInfo(String shapeName, Shape shape) {
-        System.out.println("Информация о фигуре: " + shapeName);
-        System.out.println("Периметр: " + shape.getPerimeter());
-        System.out.println("Площадь: " + shape.getArea());
-        System.out.println("Цвет заливки: " + shape.getFillColor());
-        System.out.println("Цвет границы: " + shape.getBorderColor());
-        System.out.println("--------------------");
+        System.out.println("Информация о круге:");
+        circle.displayInfo();
+
+        System.out.println("Информация о прямоугольнике:");
+        rectangle.displayInfo();
+
+        System.out.println("Информация о треугольнике:");
+        triangle.displayInfo();
     }
 }

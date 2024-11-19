@@ -1,6 +1,6 @@
 package lesson_3_aqa.task_1;
 
-class Animal {
+abstract class Animal {
     private static int animalCount = 0;
     protected String name;
 
