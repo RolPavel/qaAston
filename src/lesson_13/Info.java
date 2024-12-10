@@ -7,9 +7,7 @@ public class Info {
         String[] words = {"apple", "banana", "apple", "orange", "banana", "grape", "apple", "orange", "kiwi", "kiwi"};
 
         Map<String, Integer> wordCounts = WordCounter.countWords(words);
-
         System.out.println("Уникальные слова: " + wordCounts.keySet());
-
         wordCounts.forEach((key, value) -> System.out.println("Слово '" + key + "' встречается " + value + " раз(а)."));
 
         PhoneBook phoneBook = new PhoneBook();
